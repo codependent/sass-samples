@@ -14,3 +14,20 @@ body {
 #sidebar {
   width: $width;
 }
+
+$content: "First content";
+$content: "Second content?" !default;
+$new_content: "First time reference" !default;
+
+#secondary {
+  content: $content;
+  new-content: $new_content;
+}
+
+$content3: null;
+$content3: "Second content?" !default;
+$new_content: "First time reference" !default;
+
+#terciary {
+  content: $content3;
+}
