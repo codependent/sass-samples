@@ -18,3 +18,27 @@
   @extend .message;
   border-color: yellow;
 }
+
+
+.error2 {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.seriousError {
+  @extend .error2;
+  border-width: 3px;
+}
+.error2.intrusion {
+  background-image: url("/image/hacked.png");
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+.comment a.user:hover {
+  font-weight: bold;
+}
+.hoverlink {
+  @extend a:hover;
+}
