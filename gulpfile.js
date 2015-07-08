@@ -7,9 +7,9 @@ gulp.task('clean', require('del').bind(null, ['./css']));
 
 gulp.task('sass', ['clean'], function () {
   gulp.src('./sass/**/*.scss')
-  	.pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
-	.pipe(sourcemaps.write('./maps'))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./css'));
 });
  
