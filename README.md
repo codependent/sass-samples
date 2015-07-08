@@ -13,3 +13,5 @@ A bunch of samples to get started with Sass, showing the following functionality
 10. **Debug, warn, error**
 11. **Control directives (if, each, for, while)**
 12. **Functions**
+
+Includes a `gulpfile.js` to compile the sass files. To run it simply run the default task with the command `gulp`. 
