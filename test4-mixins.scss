@@ -30,3 +30,15 @@
 	@include does-parent-exist();
 }
 @include does-parent-exist();
+
+
+@mixin apply-to-ie6-only {
+  * html {
+    @content;
+  }
+}
+@include apply-to-ie6-only {
+  #logo {
+    background-image: url(/logo.gif);
+  }
+}

@@ -1,0 +1,9 @@
+@function grid-width($n){
+  $grid-width: 40px;
+  $gutter-width: 10px;
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+
+#sidebar { width: grid-width(5); }
+
+#sidebar2 { width: grid-width($n: 100); }
