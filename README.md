@@ -1,4 +1,4 @@
-# sass-tests
+# Sass Samples
 A bunch of samples to get started with Sass, showing the following functionality:
 
 1.  **Variables**
