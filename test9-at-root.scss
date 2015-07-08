@@ -1,0 +1,30 @@
+.parent {
+  width: 100%;
+  @at-root .child {
+    font-size:1em;
+  }
+}
+
+
+.parent2 {
+  width: 100%;
+  @at-root {
+    .child1 {
+      font-size:1em;
+    }
+    .child2 {
+      font-size:2em;
+    }
+  }
+  .step-child {font-size:3em;}
+}
+
+
+@media print {
+  .page {
+    width: 8in;
+    @at-root(without: media){
+      color: red;
+    }
+  }
+}

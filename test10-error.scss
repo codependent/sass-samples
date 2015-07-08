@@ -1,0 +1,13 @@
+@mixin adjust-location($x, $y) {
+  @if unitless($x) {
+    @error "$x may not be unitless, was #{$x}.";
+  }
+  @if unitless($y) {
+    @error "$y may not be unitless, was #{$y}.";
+  }
+  position: relative; left: $x; top: $y;
+}
+
+div.popup{
+  @include adjust-location(1px,2);
+}

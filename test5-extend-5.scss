@@ -1,0 +1,12 @@
+.error {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+
+@media print {
+  .seriousError {
+    // INVALID EXTEND: .error is used outside of the "@media print" directive
+    @extend .error;
+    border-width: 3px;
+  }
+}

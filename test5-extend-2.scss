@@ -14,3 +14,22 @@
   left: 10%;
   right: 10%;
 }
+
+
+a {
+  color: blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+#fake-links .link {
+  @extend a;
+}
+
+
+#admin .tabbar a {
+  font-weight: bold;
+}
+#demo .overview .fakelink {
+  @extend a;
+}

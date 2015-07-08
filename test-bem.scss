@@ -2,7 +2,7 @@
 
 	width:50%;
 
-	@at-root #{&}__element {
+	@at-root &__element {
 		width:100%;
 	}
 
