@@ -5,3 +5,12 @@ body {
   font: 100% $font-stack;
   color: $primary-color;
 }
+
+#main {
+  $width: 5em !global;
+  width: $width;
+}
+
+#sidebar {
+  width: $width;
+}

@@ -6,3 +6,29 @@
 }
 
 .box { @include border-radius(10px); }
+
+@mixin firefox-message($selector) {
+  body.firefox #{$selector}:before {
+    content: "Hi, Firefox users!";
+  }
+}
+
+@include firefox-message(".header");
+
+@mixin does-parent-exist {
+  @if & {
+    &:hover {
+      color: red;
+    }
+  } @else {
+    a {
+      color: red;
+    }
+  }
+}
+
+.element{
+	@include does-parent-exist();
+}
+
+@include does-parent-exist();
