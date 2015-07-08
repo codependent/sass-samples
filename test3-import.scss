@@ -1,6 +1,7 @@
-@import '_test3-import';
+@import '_test3-import1';
 
 body {
   font: 100% Helvetica, sans-serif;
   background-color: #efefef;
+  @import '_test3-import2';
 }
