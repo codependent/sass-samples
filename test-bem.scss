@@ -1,0 +1,13 @@
+.block {
+
+	width:50%;
+
+	@at-root #{&}__element {
+		width:100%;
+	}
+
+	@at-root #{&}--modifier {
+		width:150%;
+	}
+	
+}
