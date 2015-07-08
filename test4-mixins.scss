@@ -4,16 +4,16 @@
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-
 .box { @include border-radius(10px); }
+
 
 @mixin firefox-message($selector) {
   body.firefox #{$selector}:before {
     content: "Hi, Firefox users!";
   }
 }
-
 @include firefox-message(".header");
+
 
 @mixin does-parent-exist {
   @if & {
@@ -26,9 +26,7 @@
     }
   }
 }
-
 .element{
 	@include does-parent-exist();
 }
-
 @include does-parent-exist();
